@@ -44,7 +44,7 @@ Raw CSV (10,000 clinical records)
 - Resolved the many-to-many relationship between patients and their comorbidities using a **bridge table**, avoiding data duplication and preserving query flexibility.
 - Schema covers dimensions such as Patient, Treatment, Region, Time, and the Comorbidity bridge, linked to a central fact table of clinical encounters/outcomes.
 
-📄 Schema reference: [`assets/erd.png`](assets/erd.png) *(add ERD screenshot from the final report here)*
+📄 Schema reference: [`assets/erd.png`](assets/erd.png)
 
 ---
 
@@ -56,7 +56,7 @@ Raw CSV (10,000 clinical records)
   - **Data type conversions** to enforce warehouse schema consistency
   - Cleaning of inconsistent/missing values in the source data
 
-📁 Package reference: [`source/ssis/`](source/ssis) *(add `.dtsx` package if available)*
+📁 Package reference: [`source/ssis/`](source/ssis)
 
 ---
 
@@ -66,7 +66,7 @@ Raw CSV (10,000 clinical records)
 - Defined **attribute relationships** and a **time hierarchy** for efficient drill-down analysis.
 - Wrote **calculated measures (MDX)** to support fast, multi-dimensional epidemiological queries (e.g., survival rate by treatment type, region, and age group simultaneously).
 
-📸 Cube structure: [`assets/olap_cube.png`](assets/olap_cube.png) *(add screenshot from the final report here)*
+📸 Cube structure: [`assets/cube.png`](assets/cube.png)
 
 ---
 
@@ -81,10 +81,12 @@ Raw CSV (10,000 clinical records)
 
 | Overview | Treatment Analysis | Regional Breakdown |
 |---|---|---|
-| *(add screenshot)* | *(add screenshot)* | *(add screenshot)* |
+| (assets/report1.png) | (assets/report2.png) | (assets/report3.png) |
 
-🎥 Full walkthrough video: **[YouTube link here]**
-
+🎥 Full walkthrough video:
+        SSIS: **https://youtu.be/zpCIaDqupjY**
+        SSAS: **https://youtu.be/XWUUEFaJ5xE**
+        MDX + POWER BI: **https://youtu.be/GYzyGgTHPdY**
 ---
 
 ## 🤖 5. Advanced Analytics (Python)
