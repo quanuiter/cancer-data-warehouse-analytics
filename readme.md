@@ -84,9 +84,11 @@ Raw CSV (10,000 clinical records)
 | (assets/report1.png) | (assets/report2.png) | (assets/report3.png) |
 
 🎥 Full walkthrough video:
-        SSIS: **https://youtu.be/zpCIaDqupjY**
-        SSAS: **https://youtu.be/XWUUEFaJ5xE**
-        MDX + POWER BI: **https://youtu.be/GYzyGgTHPdY**
+SSIS: **https://youtu.be/zpCIaDqupjY**
+
+SSAS: **https://youtu.be/XWUUEFaJ5xE**
+
+MDX + POWER BI: **https://youtu.be/GYzyGgTHPdY**
 ---
 
 ## 🤖 5. Advanced Analytics (Python)
@@ -99,7 +101,7 @@ Raw CSV (10,000 clinical records)
 - Applied **K-Means Clustering** combined with dimensionality reduction (**PCA**, **t-SNE**) to segment patients into **3 distinct clinical profile groups**.
 - Segments support treatment protocol optimization and hospital resource allocation.
 
-📁 Notebook: [`datamining/survival_prediction.ipynb`](datamining/survival_prediction.ipynb)
+📁 Notebook: [`datamining/survival_prediction.ipynb`](datamining/cancer.ipynb)
 
 ---
 
