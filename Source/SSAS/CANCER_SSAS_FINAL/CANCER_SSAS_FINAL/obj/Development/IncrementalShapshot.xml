@@ -1,0 +1,103 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>CANCER_SSAS</Database>
+    <Server>HELL-YEAH</Server>
+    <ConnectionString>Data Source=HELL-YEAH;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>Dz5fYdnB3ewKwQ2teCCcjqFFDCM=11/17/2025 4:53:08 PM11/17/2025 4:53:08 PM</TimeStamp>
+        <ID>
+          <String>CancerDW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>pFFSv/p04UsQcxWflCmDzkWnApM=11/17/2025 10:13:52 PM11/17/2025 4:54:49 PM</TimeStamp>
+        <ID>
+          <String>Cancer DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>dxLMYJBAlEu/IxD+XFHzasIPFUE=11/17/2025 4:57:55 PM11/17/2025 4:56:26 PM</TimeStamp>
+        <ID>
+          <String>DIM OUTCOME</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>eJzr2zcKGn7CkHrI1GaNZekNXAI=11/17/2025 4:57:55 PM11/17/2025 4:56:26 PM</TimeStamp>
+        <ID>
+          <String>DIM TREATMENT</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ZvaJxfW1AyFmH7WpbJxSA9Fty4k=11/17/2025 4:57:55 PM11/17/2025 4:56:26 PM</TimeStamp>
+        <ID>
+          <String>DIM LOCATION</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>MaZi7wou9b6wq1FZyVvMhtKdm1E=11/17/2025 4:57:55 PM11/17/2025 4:56:26 PM</TimeStamp>
+        <ID>
+          <String>DIM TUMOR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>GD5lPP9hZbi0jGiOYZ9OvoEdQ/I=11/17/2025 4:57:55 PM11/17/2025 4:56:26 PM</TimeStamp>
+        <ID>
+          <String>DIM PATIENT</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>cg1rDYc3YWm3TIlui5FmQK1MGjU=11/18/2025 3:49:58 PM11/17/2025 4:56:26 PM</TimeStamp>
+        <ID>
+          <String>DIM DATE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>lh8gAelyaavCLghEASCHhfGPj/o=11/17/2025 4:57:55 PM11/17/2025 4:56:26 PM</TimeStamp>
+        <ID>
+          <String>DIM COMORBIDITY</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>LOqtT6fxzMMou6e8JWtVexQzyuA=11/25/2025 3:18:31 PM11/17/2025 4:56:26 PMyemWBgllJiv/rxfu+3RfaUuwPcc=11/17/2025 4:56:26 PM11/17/2025 4:56:26 PM</TimeStamp>
+        <ID>
+          <String>Cancer DW</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>MC3wb5mqZc9QhDn+LtBGhpNh0lc=11/17/2025 4:49:45 PM11/17/2025 4:49:45 PM</TimeStamp>
+      <ID>
+        <String>CANCER_SSAS</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2025-11-28T14:54:46.956667Z</LastDeployed>
+</DeploymentSnapshot>

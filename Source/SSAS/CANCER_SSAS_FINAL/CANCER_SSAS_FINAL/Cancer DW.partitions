@@ -1,0 +1,65 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c31b785a-5e39-4b39-8ed1-03e02183f9d3" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Cancer DW</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>FACT CANCER</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6080e82f-968b-4cab-82fb-735ad4bf7324">
+          <ID>FACT CANCER</ID>
+          <Name>FACT CANCER</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f48e401c-a622-48b7-8d14-8f3002264896">
+            <DataSourceViewID>Cancer DW</DataSourceViewID>
+            <TableID>dbo_FACT_CANCER</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>BRIGE COMORBIDITIES</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6c95488e-fd9b-4c04-803c-149c8f72b37d">
+          <ID>BRIGE COMORBIDITIES</ID>
+          <Name>BRIGE COMORBIDITIES</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1c173754-e00b-4d75-9f01-957d0aec55f3">
+            <DataSourceViewID>Cancer DW</DataSourceViewID>
+            <TableID>dbo_BRIGE_COMORBIDITIES</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM TUMOR</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="f030935f-0d85-48f7-a77a-5ffd2381d671">
+          <ID>DIM TUMOR</ID>
+          <Name>DIM TUMOR</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a4d0bc8e-6354-4c45-bf24-4ef19b6ac16a">
+            <DataSourceViewID>Cancer DW</DataSourceViewID>
+            <TableID>dbo_DIM_TUMOR</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

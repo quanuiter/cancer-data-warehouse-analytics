@@ -1,0 +1,128 @@
+﻿--Câu 1: Liệt kê số ca bệnh chẩn đoán mới theo từng năm.--
+SELECT
+    {[Measures].[Patient Count]} ON COLUMNS,
+     [Dis Date].[YEAR].Members ON ROWS
+FROM [Cancer DW];
+
+--Câu 2: Liệt kê số ca bệnh theo quý trong năm 2022.--
+SELECT 
+    [Measures].[Patient Count] ON COLUMNS,
+    DRILLDOWNLEVEL(
+        { [Dis Date].[Hi_Time].[YEAR].[2022] }
+    ) ON ROWS
+FROM [Cancer DW];
+
+--Câu 3: Liệt kê số ca bệnh theo từng tháng trong năm 2022.--
+SELECT 
+    [Measures].[Patient Count] ON COLUMNS, 
+    DESCENDANTS( [Dis Date].[Hi_Time].[YEAR].[2022],
+    [Dis Date].[Hi_Time].[Month] ) ON ROWS 
+FROM [Cancer DW];
+
+
+--Câu 4: Liệt kê số ca bệnh của nhóm bệnh nhân nam có hút thuốc theo giai đoạn ung thư.--
+SELECT 
+    [DIM Tumor].[Cancer Stage].Members ON ROWS, 
+    [Measures].[Patient Count] ON COLUMNS 
+FROM [Cancer DW] 
+WHERE ( [Dim Patient].[Gender].[Male], 
+        [Dim Patient].[Smoking Status].[Current] );
+
+
+--Câu 5: Tìm số lượng bệnh nhân theo các tỉnh thành phố Anhui, Beijing, Guangdong, Henan, Sichuan.--
+SELECT 
+    { [Measures].[Patient Count] } ON COLUMNS,
+    TOPCOUNT(
+        {
+            [DIM LOCATION].[Province].[Anhui],
+            [DIM LOCATION].[Province].[Beijing],
+            [DIM LOCATION].[Province].[Guangdong],
+            [DIM LOCATION].[Province].[Henan],
+            [DIM LOCATION].[Province].[Sichuan]
+        }, 5, [Measures].[Patient Count]
+    ) ON ROWS
+FROM [Cancer DW];
+
+--Câu 6: Liệt kê 3 Tỉnh có số bệnh nhân cao nhất trong cả hai năm 2022 và 2023.--
+SELECT
+    [Measures].[Patient Count 22-23] ON COLUMNS,
+
+    TOPCOUNT(
+        [Dim Location].[Province].Children,
+        3,
+        [Measures].[Patient Count 22-23]
+    ) ON ROWS
+
+FROM [Cancer DW];
+
+--Câu 7: Hiển thị ba bệnh ung thư có kích thước khối u lớn nhất.--
+SELECT 
+    { [Measures].[Tumor Size] } ON COLUMNS,
+    TOPCOUNT(
+        EXCEPT(
+            [DIM TUMOR].[Tumor Type].MEMBERS,
+            { [DIM TUMOR].[Tumor Type].[(All)] }
+        ), 3, [Measures].[Tumor Size]
+    ) ON ROWS
+FROM [Cancer DW];
+--Câu 8: Liệt kê số bệnh nhân di căn theo nhóm tuổi.--
+SELECT
+    {
+        ([DIM TUMOR].[Metastasis].[Yes], [Measures].[Metastasis Count])
+    } ON COLUMNS,
+    [DIM PATIENT].[Age Group].[Age Group].MEMBERS ON ROWS
+FROM [Cancer DW];
+
+--Câu 9: Liệt kê tỉ lệ sống sót của bệnh nhân ung thư giai đoạn 4 theo từng nhóm tuổi.--
+SELECT 
+    NON EMPTY { 
+        [Measures].[Survival Rate]
+    } ON COLUMNS,
+
+    NON EMPTY { 
+        FILTER(
+            [DIM PATIENT].[Age Group].[Age Group].ALLMEMBERS, 
+            [Measures].[Survival Rate]
+        )
+    } 
+    ON ROWS
+FROM [Cancer DW]
+WHERE [DIM TUMOR].[Cancer Stage].[IV]
+
+
+--Câu 10: Liệt kê top 5 loại ung thư có nhiều bệnh nhân nhất.--
+SELECT 
+    NON EMPTY { [Measures].[Patient Count] } ON COLUMNS, 
+    NON EMPTY { ([DIM TUMOR].[Tumor Type].[Tumor Type].ALLMEMBERS ) } 
+    ON ROWS 
+FROM ( 
+    SELECT 
+    ( 
+        TOPCOUNT(
+            [DIM TUMOR].[Tumor Type].CHILDREN,
+            5,
+            [Measures].[Patient Count]
+        )  
+    ) ON COLUMNS 
+    FROM [Cancer DW]
+)
+--Câu 11: Liệt kê Top 10 tỉnh có tỉ lệ sống sót cao nhất.--
+SELECT 
+	NON EMPTY { [Measures].[Survival Rate] } ON COLUMNS, 
+	NON EMPTY { [DIM LOCATION].[Province].[Province].MEMBERS 	
+	} ON ROWS 
+FROM (	SELECT 
+	(TOPCOUNT( [DIM LOCATION].[Province].CHILDREN, 10,
+ 	[Measures].[Survival Rate] ) ) 
+	ON COLUMNS 
+FROM [Cancer DW] )
+
+
+--Câu 12: Số bệnh nhân và tỷ lệ sống theo từng phương pháp điều trị của bệnh nhân là nữ giới.--
+SELECT 
+ { [Measures].[Patient Count], [Measures].[Survival Rate] } ON COLUMNS,
+ [DIM TREATMENT].[Treatment Type].[Treatment Type].ALLMEMBERS 
+ON ROWS
+FROM [Cancer DW]
+WHERE ( [DIM PATIENT].[Gender].&[Female] );
+

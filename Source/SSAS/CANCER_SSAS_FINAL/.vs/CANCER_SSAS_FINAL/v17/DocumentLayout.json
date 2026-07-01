@@ -1,0 +1,165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Olap\\CANCER_SSAS_FINAL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D8DE194-DE93-2281-433F-5CF89132C051}|CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL.dwproj|D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\Cancer DW.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{3D8DE194-DE93-2281-433F-5CF89132C051}|CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL.dwproj|solutionrelative:CANCER_SSAS_FINAL\\Cancer DW.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D8DE194-DE93-2281-433F-5CF89132C051}|CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL.dwproj|D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM DATE.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{3D8DE194-DE93-2281-433F-5CF89132C051}|CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL.dwproj|solutionrelative:CANCER_SSAS_FINAL\\DIM DATE.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D8DE194-DE93-2281-433F-5CF89132C051}|CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL.dwproj|D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM COMORBIDITY.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{3D8DE194-DE93-2281-433F-5CF89132C051}|CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL.dwproj|solutionrelative:CANCER_SSAS_FINAL\\DIM COMORBIDITY.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D8DE194-DE93-2281-433F-5CF89132C051}|CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL.dwproj|D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM PATIENT.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{3D8DE194-DE93-2281-433F-5CF89132C051}|CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL.dwproj|solutionrelative:CANCER_SSAS_FINAL\\DIM PATIENT.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D8DE194-DE93-2281-433F-5CF89132C051}|CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL.dwproj|D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM TREATMENT.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{3D8DE194-DE93-2281-433F-5CF89132C051}|CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL.dwproj|solutionrelative:CANCER_SSAS_FINAL\\DIM TREATMENT.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D8DE194-DE93-2281-433F-5CF89132C051}|CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL.dwproj|D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM LOCATION.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{3D8DE194-DE93-2281-433F-5CF89132C051}|CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL.dwproj|solutionrelative:CANCER_SSAS_FINAL\\DIM LOCATION.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D8DE194-DE93-2281-433F-5CF89132C051}|CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL.dwproj|D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM OUTCOME 1.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{3D8DE194-DE93-2281-433F-5CF89132C051}|CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL.dwproj|solutionrelative:CANCER_SSAS_FINAL\\DIM OUTCOME 1.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D8DE194-DE93-2281-433F-5CF89132C051}|CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL.dwproj|D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM TUMOR.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{3D8DE194-DE93-2281-433F-5CF89132C051}|CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL.dwproj|solutionrelative:CANCER_SSAS_FINAL\\DIM TUMOR.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM OUTCOME.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CANCER_SSAS_FINAL\\DIM OUTCOME.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DIM DATE.dim [Design]",
+              "DocumentMoniker": "D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM DATE.dim",
+              "RelativeDocumentMoniker": "CANCER_SSAS_FINAL\\DIM DATE.dim",
+              "ToolTip": "D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM DATE.dim [Design]",
+              "RelativeToolTip": "CANCER_SSAS_FINAL\\DIM DATE.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-24T01:44:07.633Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cancer DW.cube [Design]",
+              "DocumentMoniker": "D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\Cancer DW.cube",
+              "RelativeDocumentMoniker": "CANCER_SSAS_FINAL\\Cancer DW.cube",
+              "ToolTip": "D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\Cancer DW.cube [Design]",
+              "RelativeToolTip": "CANCER_SSAS_FINAL\\Cancer DW.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-24T01:43:56.962Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DIM OUTCOME.dim",
+              "DocumentMoniker": "D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM OUTCOME.dim",
+              "RelativeDocumentMoniker": "CANCER_SSAS_FINAL\\DIM OUTCOME.dim",
+              "ToolTip": "D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM OUTCOME.dim",
+              "RelativeToolTip": "CANCER_SSAS_FINAL\\DIM OUTCOME.dim",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-17T09:56:35.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DIM COMORBIDITY.dim [Design]",
+              "DocumentMoniker": "D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM COMORBIDITY.dim",
+              "RelativeDocumentMoniker": "CANCER_SSAS_FINAL\\DIM COMORBIDITY.dim",
+              "ToolTip": "D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM COMORBIDITY.dim [Design]",
+              "RelativeToolTip": "CANCER_SSAS_FINAL\\DIM COMORBIDITY.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-24T01:41:45.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DIM PATIENT.dim [Design]",
+              "DocumentMoniker": "D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM PATIENT.dim",
+              "RelativeDocumentMoniker": "CANCER_SSAS_FINAL\\DIM PATIENT.dim",
+              "ToolTip": "D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM PATIENT.dim [Design]",
+              "RelativeToolTip": "CANCER_SSAS_FINAL\\DIM PATIENT.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-24T01:41:27.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DIM TREATMENT.dim [Design]",
+              "DocumentMoniker": "D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM TREATMENT.dim",
+              "RelativeDocumentMoniker": "CANCER_SSAS_FINAL\\DIM TREATMENT.dim",
+              "ToolTip": "D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM TREATMENT.dim [Design]",
+              "RelativeToolTip": "CANCER_SSAS_FINAL\\DIM TREATMENT.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-24T01:41:08.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DIM LOCATION.dim [Design]",
+              "DocumentMoniker": "D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM LOCATION.dim",
+              "RelativeDocumentMoniker": "CANCER_SSAS_FINAL\\DIM LOCATION.dim",
+              "ToolTip": "D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM LOCATION.dim [Design]",
+              "RelativeToolTip": "CANCER_SSAS_FINAL\\DIM LOCATION.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-24T01:40:50.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DIM OUTCOME 1.dim [Design]",
+              "DocumentMoniker": "D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM OUTCOME 1.dim",
+              "RelativeDocumentMoniker": "CANCER_SSAS_FINAL\\DIM OUTCOME 1.dim",
+              "ToolTip": "D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM OUTCOME 1.dim [Design]",
+              "RelativeToolTip": "CANCER_SSAS_FINAL\\DIM OUTCOME 1.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-24T01:40:31.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DIM TUMOR.dim [Design]",
+              "DocumentMoniker": "D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM TUMOR.dim",
+              "RelativeDocumentMoniker": "CANCER_SSAS_FINAL\\DIM TUMOR.dim",
+              "ToolTip": "D:\\Olap\\CANCER_SSAS_FINAL\\CANCER_SSAS_FINAL\\DIM TUMOR.dim [Design]",
+              "RelativeToolTip": "CANCER_SSAS_FINAL\\DIM TUMOR.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-24T01:39:53.523Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
