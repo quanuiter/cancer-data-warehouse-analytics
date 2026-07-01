@@ -81,11 +81,11 @@ Raw CSV (10,000 clinical records)
 
 ## Interactive Reporting (Power BI)
 
-Dashboards enabling clinical insight reporting across treatment types, age groups, and regions:
+Dashboards enabling clinical insight reporting:
 
-| Overview | Treatment Analysis | Regional Breakdown |
-| :---: | :---: | :---: |
-| `assets/report1.png` | `assets/report2.png` | `assets/report3.png` |
+| Overview |
+| :---: |
+| ![Dashboard Preview](report1.png) |
 
 🎥 Full walkthrough videos:
 * SSIS ETL: https://youtu.be/zpCIaDqupjY
