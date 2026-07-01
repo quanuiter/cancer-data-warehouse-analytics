@@ -85,7 +85,7 @@ Dashboards enabling clinical insight reporting:
 
 | Overview |
 | :---: |
-| ![Dashboard Preview](report1.png) |
+| ![Dashboard Preview](assets/report1.png) |
 
 🎥 Full walkthrough videos:
 * SSIS ETL: https://youtu.be/zpCIaDqupjY
